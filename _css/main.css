@@ -56,7 +56,7 @@ nav{
   background-color:rgba(1, 142, 212, 1);  
 }
 .container{
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 .nav-wrapper{
@@ -75,8 +75,7 @@ ul.menu-desktop a{
   text-decoration: none;  
   color: #fff;
   padding: 0 30px;
-  line-height: 50px;  
-  font-family: 
+  line-height: 50px;    
 }
 ul.menu-desktop a:hover{
   border-bottom: 3px solid rgba(255,21,21, 0.8);
@@ -86,14 +85,16 @@ ul.menu-desktop a:hover{
 ul.menu-mobile{  
   list-style-type: none; 
   position: absolute;
-  background-color:rgba(1, 142, 212, 1);
+  background-color:rgba(1, 142, 212, .9);
   padding-left:10px;
   display: none;
+  width: 200px;
 }
 ul.menu-mobile li{
   font-size: 40px;
   line-height: 50px;
   color: #fff; 
+  margin-left: 5%;
 }
 ul.menu-mobile li ul{  
  width: 170px;
@@ -125,34 +126,29 @@ ul.menu-mobile li ul li:hover{
 }
 
 /*Tratamentos*/
+.title-tratamento{
+  text-align:center;
+}
 section.artigos{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 30px;  
 }
 .art-item{
-  width: 32%;
+  width: 31%;
   height: auto; 
   margin-bottom: 23px;
   transition: 0.5s;
   cursor: pointer;
+  margin: 0 7px;  
 }
 .art-item:hover{
   box-shadow: 3px 3px 20px gray;
   transition: 0.5s;
   transform: scale(1.1);
 }
-blockquote{
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding-left: 25px;
-  border-left: 3px solid rgba(1, 142, 212, 1);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
-  color: #444;
-  
-}
+
 .triangulo{
  opacity: 42%;
  text-align: center; 
@@ -173,6 +169,12 @@ figure.depo{
 }
 .depo-paciente{
   border-radius: 100%;
+}
+.depo-title{
+  color: #436EBE;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 50px;  
 }
 /*Tipografia*/
 .txt-justify{
@@ -202,16 +204,18 @@ figcaption p{
 hr{
   color: rgba(1, 142, 212, 1); 
 }
-/*Duvidas*/
+/*Perguntas*/
 .question{
   font-size: 1.3em;  
 }
-/*Depoimentos*/
-.depo-title{
-  color: #436EBE;
-  font-size: 1.8em;
-  text-align: center;
-  margin-bottom: 50px;
+blockquote{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  border-left: 3px solid rgba(1, 142, 212, 1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  color: #444;  
 }
 /*titulo depoimento*/
 .name{
@@ -416,70 +420,27 @@ footer{
   font-size: 1.1em
 }
 /*midias queries*/
-@media only screen and (max-width:800px){
-   .logo1{
-  width: 20%;
-  position: absolute;
-  top: 0;
-  right: 11%; 
-  margin-top: 1px;
-}
-  .estrela img{
-    width: 15%; 
-    height: auto;
-  } 
-  footer{
-    margin-top: -36px;
-  }   
-  .box-social img:hover{    
-    transform: scale(1.1);
-    transition: 0.7s;
-  } 
-  .question{
-    font-size: 1.0em;
-  }
-  .container{
-    width: 90%;
-  }
-  figure.depo{
-    margin-left: 20px;
-  } 
-  .rodape-logo img{
-    width: 25%;
-    height: auto;
-  }
-  .info-parceiros{
-    font-size: 0.6em;
-    padding-top: 10px;
-  }  
-  .img-art img{
-    width: 60%;
-    height: auto;
-  }
-  .txt h3{
-  margin-top: 0;  
-  }
-  ul.menu-desktop a{
-    padding: 0 20px;
-  }
+/*@media only screen and (max-width:800px){
+    
+     
   .campo{
     width: 220px;     
   }
-  .titulo2{
-    text-align: center;
-  }
-}
+  
+  footer{
+    margin-top: -36px;
+  }  
+}*/
 /*Celular*/
-@media only screen and (max-width:500px){
+@media only screen and (max-width:800px){  
   .logo1{
-  width: 20%;
-  position: absolute;
-  top: 0;
-  right: 20%; 
-  margin-top: 5px;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 20%; 
+    margin-top: 5px;
 }
-  .box-social{
-    bottom: ;
+  .box-social{   
     top: 55%;
     opacity: 90%;
     transition: 0.7s;
@@ -487,10 +448,7 @@ footer{
   .box-social img:hover{    
     transform: scale(1.1);
     transition: 0.7s;
-  }
-  h1{
-    text-align: center;
-  }
+  }  
   .estrela img{
     width: 15%;
   }
@@ -508,12 +466,24 @@ footer{
     width: 95%;    
   }
   .art-item{
-    width: 49%;    
+    width: 45%;    
   }
   .art-item:hover{
     transform: scale(0.9);
     transition: 0.5s;
   }
+  #box-questions{
+    display: none;
+  }
+  .triangulo{
+    display: none;
+  }
+  .faixa{
+    display: none;
+  }
+  figure.depo{
+    margin-left: 20px;
+  }  
   .info-rodape .title-rodape{
     font-size: 1.1em;
   }
@@ -546,7 +516,81 @@ footer{
   }
   .campo{
     width: 85%;
-  }
-  
-  
+  }  
 }
+@media screen and (max-width:500px){
+  .logo1{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 20%;    
+   
+}
+  section.artigos{
+    justify-content: center;     
+  }
+  .art-item{
+    width: 95%;    
+  }
+  .titulo{
+    font-size: 1.3em;
+  }
+  .depoiments{
+    flex-direction: column;
+    align-items: center;    
+  }
+ .row{
+   display: none;
+ }
+ .title-prof{
+   margin-bottom: 5%;
+   text-align: center;
+ }
+ .fig-prof{
+   width: 20%;
+   margin-top: 3%;
+ }
+ .second-img{   
+   margin-top: 0;
+ }
+ 
+ textarea{
+   resize: none;   
+ }
+  .rodape{
+    display: flex;
+    flex-direction: column;    
+  }
+  .title-rodape{
+    display:none;
+  }
+  .info-rodape p{
+      font-size: 1.1em;      
+      text-align: center;
+  }
+  .info-parceiros{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+  }  
+  .info-parceiros p{
+    display: none;
+  }  
+  .title-parceiros{
+    font-size: 1.3em;      
+    text-align: center;
+    margin-top: 5%;
+    color: red;
+  }
+  .rodape-item{
+    width: 50px;      
+    margin: 0 10px; 
+  }
+  .rodape-item img{
+    width: 50px;    
+  }
+  .copy{
+    font-size: 1em; 
+  }
+}
+  
