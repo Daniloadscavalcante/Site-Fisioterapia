@@ -94,7 +94,8 @@ ul.menu-mobile li{
   font-size: 40px;
   line-height: 10px;
   color: #fff; 
-  margin-left: 5%;
+  margin-left: 5%;  
+  margin-top: -6px;
 }
 ul.menu-mobile li ul{  
  width: 170px; 
