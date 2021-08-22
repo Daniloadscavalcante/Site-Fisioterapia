@@ -86,19 +86,18 @@ ul.menu-mobile{
   list-style-type: none; 
   position: absolute;
   background-color:rgba(1, 142, 212, .9);
-  padding-left:10px;
+  top:20%;
   display: none;
   width: 200px;
 }
 ul.menu-mobile li{
   font-size: 40px;
-  line-height: 50px;
+  line-height: 10px;
   color: #fff; 
   margin-left: 5%;
 }
 ul.menu-mobile li ul{  
- width: 170px;
- line-height: 50px;
+ width: 170px; 
  display: none;   
  list-style-type: none;
 }
@@ -119,10 +118,13 @@ ul.menu-mobile li ul li:hover{
 
 
 /*Sessão main*/
-.row{
+.row-tratamento{
   padding-top: 50px;
   padding-bottom: 40px;
   height: auto;
+}
+.box-section {
+  padding: 5%;
 }
 
 /*Tratamentos*/
@@ -142,6 +144,7 @@ section.artigos{
   transition: 0.5s;
   cursor: pointer;
   margin: 0 7px;  
+  margin-bottom: 24px;
 }
 .art-item:hover{
   box-shadow: 3px 3px 20px gray;
@@ -175,6 +178,7 @@ figure.depo{
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 50px;  
+  margin-top: 3%;
 }
 /*Tipografia*/
 .txt-justify{
@@ -208,6 +212,9 @@ hr{
 .question{
   font-size: 1.3em;  
 }
+.box-questions{
+  margin-top: 3%;
+}
 blockquote{
   margin-top: 10px;
   margin-bottom: 20px;
@@ -237,6 +244,9 @@ h1{
 }
 .tratamentos{
   margin-top: 60px;
+}
+.title-center{
+  margin-top: 5%;
 }
 .img-art{  
   display: flex;
@@ -271,7 +281,7 @@ h1{
   font-size: 16px;
   color: #018ed4;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 15%;
 }
 /*Pagina SOBRE-NÓS*/
 .title-sobre-nos{
@@ -280,6 +290,7 @@ h1{
   color: #436ebe;
   font-weight: 700;    
   text-align: center;
+  margin: 3%;
 }
 .txt-intro p{
   text-align: center;  
@@ -334,7 +345,7 @@ figure.fig-prof img{
   margin-bottom: 20px;    
 }
 .campo{
-  width: 250px;  
+  width: 300px;  
   padding-left: 10px;
   height: 50px;
   margin-bottom: 10px;
@@ -526,6 +537,9 @@ footer{
     right: 20%;    
    
 }
+ul.menu-mobile{
+  width: 40vw;
+}
   section.artigos{
     justify-content: center;     
   }
@@ -534,6 +548,9 @@ footer{
   }
   .titulo{
     font-size: 1.3em;
+  }
+  .title-center{
+    margin-top: 15%;
   }
   .depoiments{
     flex-direction: column;
@@ -552,8 +569,7 @@ footer{
  }
  .second-img{   
    margin-top: 0;
- }
- 
+ } 
  textarea{
    resize: none;   
  }
