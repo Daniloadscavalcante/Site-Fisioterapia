@@ -1,0 +1,19 @@
+[data-anime]{ /*desse jeito seleciono todos data-anime*/
+    opacity: 0;
+    transition: .4s linear;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-100px, 0, 0);
+}
+[data-anime="center"]{
+    transform: translate3d(0, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate {/*criando uma class*/
+    opacity: 1;
+    transform: translate3d(0,0,0);/*0, 0, 0 x,y,z saõ refente aos eixos*/
+}
